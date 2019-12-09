@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BL.Rentas.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Categorias</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Descripcion</li>
+    }
+</ul>
