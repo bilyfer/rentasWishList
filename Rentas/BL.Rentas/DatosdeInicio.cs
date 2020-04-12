@@ -16,6 +16,7 @@ namespace BL.Rentas
             var usuarioAdmin = new Usuario();
             usuarioAdmin.Nombre = "admin";
             usuarioAdmin.Contrasena = "123";
+            usuarioAdmin.TipoUsuario = "Administradores";
 
             contexto.Usuarios.Add(usuarioAdmin);
 

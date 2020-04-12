@@ -6,7 +6,8 @@ namespace BL.Rentas
 {
     public class Contexto : DbContext
     {
-        public Contexto() : base("VideoJuegos2")
+        public Contexto(): base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" +
+            Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\VideoJuegos.mdf")
         {
 
         }

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Win.Rentas
@@ -32,16 +25,43 @@ namespace Win.Rentas
                 toolStripStatusLabel1.Text = "Usuario: "
                     + Program.UsuarioLogueado.Nombre;
 
-                if (Program.UsuarioLogueado.TipoUsuario == "Usuario caja")
+                if (Program.UsuarioLogueado.TipoUsuario == "Usuarios caja")
                 {
                     productosToolStripMenuItem.Visible = false;
                     clientesToolStripMenuItem.Visible = false;
+                    rentarToolStripMenuItem.Visible = true;
+                    facturaToolStripMenuItem.Visible = true;
+                    administracionDeUsuariosToolStripMenuItem.Visible = false;
+                    reporteDeProductosToolStripMenuItem.Visible = false;
+                    reporteDeClientesToolStripMenuItem.Visible = false;
+                    reporteDeRentasToolStripMenuItem.Visible = true;
+                    reporteDeFacturasToolStripMenuItem.Visible = true;
                 }
 
-                if (Program.UsuarioLogueado.TipoUsuario == "Admnistradores")
+                if (Program.UsuarioLogueado.TipoUsuario == "Usuarios Ventas")
+                {
+                    productosToolStripMenuItem.Visible = false;
+                    clientesToolStripMenuItem.Visible = true;
+                    rentarToolStripMenuItem.Visible = false;
+                    facturaToolStripMenuItem.Visible = false;
+                    administracionDeUsuariosToolStripMenuItem.Visible = false;
+                    reporteDeProductosToolStripMenuItem.Visible = false;
+                    reporteDeClientesToolStripMenuItem.Visible = true;
+                    reporteDeRentasToolStripMenuItem.Visible = false;
+                    reporteDeFacturasToolStripMenuItem.Visible = false;
+                }
+
+                if (Program.UsuarioLogueado.TipoUsuario == "Administradores")
                 {
                     productosToolStripMenuItem.Visible = true;
                     clientesToolStripMenuItem.Visible = true;
+                    rentarToolStripMenuItem.Visible = true;
+                    facturaToolStripMenuItem.Visible = true;
+                    administracionDeUsuariosToolStripMenuItem.Visible = true;
+                    reporteDeProductosToolStripMenuItem.Visible = false;
+                    reporteDeClientesToolStripMenuItem.Visible = true;
+                    reporteDeRentasToolStripMenuItem.Visible = true;
+                    reporteDeFacturasToolStripMenuItem.Visible = true;
                 }
 
             } else

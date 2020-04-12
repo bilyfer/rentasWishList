@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win.Rentas", "Win.Rentas\Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL.Rentas", "BL.Rentas\BL.Rentas.csproj", "{04879E3A-EBE5-40E6-92CA-58293B8D72EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Rentas", "Web.Rentas\Web.Rentas.csproj", "{CC0CA0C8-6182-4A2B-9E5A-E2DA05D30682}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{04879E3A-EBE5-40E6-92CA-58293B8D72EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04879E3A-EBE5-40E6-92CA-58293B8D72EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04879E3A-EBE5-40E6-92CA-58293B8D72EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC0CA0C8-6182-4A2B-9E5A-E2DA05D30682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC0CA0C8-6182-4A2B-9E5A-E2DA05D30682}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC0CA0C8-6182-4A2B-9E5A-E2DA05D30682}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC0CA0C8-6182-4A2B-9E5A-E2DA05D30682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
