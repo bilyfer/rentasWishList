@@ -95,5 +95,24 @@ namespace Win.Rentas
 
             DeshabilitarHabilitarBotones(false);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var buscar = textBox1.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaClientesBindingSource.DataSource =
+                    _clientesBL.ObtenerClientes();
+            }
+            else
+            {
+                listaClientesBindingSource.DataSource =
+                    _clientesBL.ObtenerClientes(buscar);
+            }
+
+
+            listaClientesBindingSource.ResetBindings(false);
+        }
     }
 }

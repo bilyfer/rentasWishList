@@ -58,7 +58,7 @@ namespace Win.Rentas
                     rentarToolStripMenuItem.Visible = true;
                     facturaToolStripMenuItem.Visible = true;
                     administracionDeUsuariosToolStripMenuItem.Visible = true;
-                    reporteDeProductosToolStripMenuItem.Visible = false;
+                    reporteDeProductosToolStripMenuItem.Visible = true;
                     reporteDeClientesToolStripMenuItem.Visible = true;
                     reporteDeRentasToolStripMenuItem.Visible = true;
                     reporteDeFacturasToolStripMenuItem.Visible = true;
